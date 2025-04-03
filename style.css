@@ -1,0 +1,1125 @@
+/* Основные стили */
+body {
+    margin: 0;
+    max-width: 100%;
+    font-family: Arial, sans-serif;
+    background-color: rgb(255, 255, 255);
+    padding-top: 80px;
+  }
+  
+  /* Баннер */
+  .back {
+    background-position: center;
+    background-size: auto;
+    margin-top: -0.5vw;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .banner-img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  /* Категории и заголовки */
+  .category {
+    margin-top: 2vw;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    color: cornflowerblue;
+  }
+  
+  .product-section {
+    margin: 4vw 0;
+  }
+  
+  .section-title {
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    color: cornflowerblue;
+    font-size: 2.5rem;
+    margin-bottom: 2vw;
+  }
+  
+  /* Контейнеры продуктов */
+  .products-container {
+    width: 100%;
+    overflow-x: auto;
+    padding: 1vw 0;
+    scrollbar-width: thin;
+    scrollbar-color: #ff9500 #f0f0f0;
+  }
+  
+  .products-container::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .products-container::-webkit-scrollbar-track {
+    background: #f0f0f0;
+    border-radius: 10px;
+  }
+  
+  .products-container::-webkit-scrollbar-thumb {
+    background: #ff9500;
+    border-radius: 10px;
+  }
+  
+  .products-row {
+    display: flex;
+    gap: 2vw;
+    padding: 0 2vw;
+    flex-wrap: nowrap;
+  }
+  
+  /* Карточки продуктов */
+  .product-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    min-width: 250px;
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 1rem;
+    flex: 0 0 auto;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .product-card h3 {
+    margin: 1rem 0;
+    font-size: 1.1rem;
+    color: #333;
+    text-align: center;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #e67e22;
+    font-size: 1.3rem;
+    margin: 0.5rem 0;
+  }
+  
+  .add-to-cart {
+    background-color: #cbeaff;
+    color: rgb(249, 137, 0);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s, transform 0.3s;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    font-family: "Russo One", sans-serif;
+  }
+  
+  .add-to-cart:hover {
+    background-color: #b5e0ff;
+    transform: translateY(-3px);
+  }
+  
+  /* Изображения продуктов */
+  .product-image {
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    transition: all 0.3s ease;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .product-image:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Шапка */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ff9500, #3eb7fd);
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    height: auto;
+    margin-top: 0;
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .GLOGANG {
+    color: white;
+    font-family: "Russo One", sans-serif;
+    font-size: 2.5rem;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    position: relative;
+    background: none;
+  }
+  
+  .nav-button {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-button a {
+    color: white;
+    text-decoration: none;
+    font-family: "Russo One", sans-serif;
+    font-size: 1rem;
+    padding: 8px 15px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  
+  .nav-button a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-3px);
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .account,
+  .register-btn,
+  .cart-btn {
+    background-color: white;
+    color: #ff9500;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: "Russo One", sans-serif;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .account:hover,
+  .register-btn:hover,
+  .cart-btn:hover {
+    background-color: #ff9500;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Добавить стили для счетчика корзины */
+  .cart-count {
+    background-color: #ff9500;
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 0.7rem;
+    margin-left: 5px;
+    display: inline-block;
+  }
+  
+  /* Модальное окно регистрации */
+  .modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: modalFadeIn 0.4s;
+  }
+  
+  @keyframes modalFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .close-modal {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 24px;
+    color: #999;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s;
+  }
+  
+  .close-modal:hover {
+    color: #ff9500;
+  }
+  
+  .modal-header {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .modal-header h2 {
+    color: #ff9500;
+    font-family: "Russo One", sans-serif;
+    margin: 0;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #3eb7fd;
+    box-shadow: 0 0 0 2px rgba(62, 183, 253, 0.2);
+  }
+  
+  .checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .checkbox-group input {
+    margin-right: 10px;
+  }
+  
+  .submit-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff9500, #3eb7fd);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Russo One", sans-serif;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .submit-btn:hover {
+    background: linear-gradient(to right, #ff8000, #2aa7ed);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Подвал */
+  footer {
+    background: linear-gradient(to right, #ff9500, #3eb7fd);
+    color: white;
+    padding: 40px 0 20px;
+    margin-top: 50px;
+  }
+  
+  .footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+  
+  .footer-column h3 {
+    font-family: "Russo One", sans-serif;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footer-column h3::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background: white;
+  }
+  
+  .footer-column p,
+  .footer-column a {
+    color: white;
+    margin-bottom: 10px;
+    display: block;
+    text-decoration: none;
+    transition: opacity 0.3s;
+  }
+  
+  .footer-column a:hover {
+    opacity: 0.8;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: white;
+    color: #ff9500;
+    border-radius: 50%;
+    transition: all 0.3s;
+  }
+  
+  .social-icons a:hover {
+    background-color: #ff9500;
+    color: white;
+    transform: translateY(-5px);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Модальное окно товара */
+  .product-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-modal-content {
+    background: white;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 900px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: modalFadeIn 0.4s;
+  }
+  
+  .product-modal-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-modal-image {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-modal-image img {
+    max-width: 100%;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+  
+  .product-modal-details {
+    flex: 1;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .product-modal-details h2 {
+    color: #333;
+    font-family: "Russo One", sans-serif;
+    margin: 0 0 10px 0;
+    font-size: 1.8rem;
+  }
+  
+  .product-modal-price {
+    color: #ff9500;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .product-modal-description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+  
+  .product-modal-options {
+    margin-bottom: 25px;
+  }
+  
+  .product-modal-sizes,
+  .product-modal-colors {
+    margin-bottom: 20px;
+  }
+  
+  .product-modal-options h3 {
+    font-family: "Russo One", sans-serif;
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+  }
+  
+  .size-options,
+  .color-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .size-option,
+  .color-option {
+    padding: 8px 15px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    background: none;
+    cursor: pointer;
+    transition: all 0.3s;
+    font-weight: bold;
+  }
+  
+  .size-option:hover,
+  .color-option:hover,
+  .size-option.active,
+  .color-option.active {
+    border-color: #3eb7fd;
+    background-color: rgba(62, 183, 253, 0.1);
+  }
+  
+  .product-modal-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .add-to-cart-modal {
+    flex: 1;
+    padding: 12px 20px;
+    background: linear-gradient(to right, #ff9500, #3eb7fd);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Russo One", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .add-to-cart-modal:hover {
+    background: linear-gradient(to right, #ff8000, #2aa7ed);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .add-to-wishlist {
+    padding: 12px 20px;
+    background: white;
+    color: #ff9500;
+    border: 2px solid #ff9500;
+    border-radius: 8px;
+    font-family: "Russo One", sans-serif;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+  }
+  
+  .add-to-wishlist:hover {
+    background-color: rgba(255, 149, 0, 0.1);
+    transform: translateY(-3px);
+  }
+  
+  /* Селектор количества */
+  .quantity-selector {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+  }
+  
+  .quantity-selector label {
+    margin-right: 15px;
+    font-weight: bold;
+  }
+  
+  .quantity-controls {
+    display: flex;
+    align-items: center;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .quantity-btn {
+    width: 40px;
+    height: 40px;
+    background-color: #f5f5f5;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .quantity-btn:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .quantity-input {
+    width: 50px;
+    height: 40px;
+    border: none;
+    border-left: 2px solid #ddd;
+    border-right: 2px solid #ddd;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .quantity-input:focus {
+    outline: none;
+  }
+  
+  /* Стили для модального окна корзины */
+  .cart-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 2000;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .cart-modal-content {
+    background: white;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+    animation: modalFadeIn 0.4s;
+  }
+  
+  .cart-modal-header {
+    padding: 20px 30px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .cart-modal-header h2 {
+    color: #ff9500;
+    font-family: "Russo One", sans-serif;
+    margin: 0;
+  }
+  
+  .cart-modal-body {
+    padding: 20px 30px;
+  }
+  
+  /* Стили для товаров в корзине */
+  .cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .cart-item-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-right: 15px;
+  }
+  
+  .cart-item-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .cart-item-details {
+    flex: 1;
+  }
+  
+  .cart-item-name {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+  }
+  
+  .cart-item-options {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .cart-item-price {
+    color: #ff9500;
+    font-weight: bold;
+  }
+  
+  .cart-item-quantity {
+    display: flex;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .cart-quantity-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cart-quantity-input {
+    width: 40px;
+    height: 30px;
+    border: 1px solid #ddd;
+    text-align: center;
+    margin: 0 5px;
+  }
+  
+  .cart-item-remove {
+    color: #ff0000;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+  }
+  
+  .cart-item-remove:hover {
+    color: #cc0000;
+  }
+  
+  /* Стили для пустой корзины */
+  .cart-empty {
+    text-align: center;
+    padding: 30px 0;
+  }
+  
+  .cart-empty p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .continue-shopping {
+    background: linear-gradient(to right, #ff9500, #3eb7fd);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-family: "Russo One", sans-serif;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .continue-shopping:hover {
+    background: linear-gradient(to right, #ff8000, #2aa7ed);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Стили для итогов корзины */
+  .cart-summary {
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+  }
+  
+  .cart-total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-btn {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(to right, #ff9500, #3eb7fd);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-family: "Russo One", sans-serif;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .checkout-btn:hover {
+    background: linear-gradient(to right, #ff8000, #2aa7ed);
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Адаптивный дизайн */
+  @media (min-width: 768px) {
+    .product-modal-body {
+      flex-direction: row;
+    }
+  
+    .product-modal-actions {
+      flex-direction: row;
+    }
+  }
+  
+  @media (max-width: 1200px) {
+    .section-title {
+      font-size: 2rem;
+    }
+  
+    .product-card {
+      width: 280px;
+      min-width: 220px;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .header {
+      padding: 10px 20px;
+    }
+  
+    .GLOGANG {
+      font-size: 2rem;
+    }
+  
+    .nav-button a {
+      font-size: 0.9rem;
+      padding: 6px 12px;
+    }
+  
+    .account,
+    .register-btn,
+    .cart-btn {
+      padding: 8px 15px;
+      font-size: 0.8rem;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding-top: 150px;
+    }
+  
+    .header {
+      flex-direction: column;
+      padding: 10px;
+    }
+  
+    .logo-container {
+      margin-bottom: 10px;
+    }
+  
+    .nav-button {
+      margin: 10px 0;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    .user-actions {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    .section-title {
+      font-size: 1.5rem;
+    }
+  
+    .product-card h3 {
+      font-size: 1rem;
+    }
+  
+    .price {
+      font-size: 1.1rem;
+    }
+  
+    .add-to-cart {
+      font-size: 0.9rem;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+    }
+  
+    .product-modal-details h2 {
+      font-size: 1.5rem;
+    }
+  
+    /* Адаптивные стили для корзины */
+    .cart-item {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .cart-item-image {
+      margin-bottom: 10px;
+    }
+  
+    .cart-item-actions {
+      margin-top: 10px;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    body {
+      padding-top: 180px;
+    }
+  
+    .GLOGANG {
+      font-size: 1.8rem;
+    }
+  
+    .nav-button {
+      gap: 10px;
+    }
+  
+    .nav-button a {
+      font-size: 0.8rem;
+      padding: 5px 10px;
+    }
+  
+    .user-actions {
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+  
+    .account,
+    .register-btn,
+    .cart-btn {
+      padding: 6px 12px;
+      font-size: 0.7rem;
+    }
+  
+    .product-card {
+      min-width: 200px;
+      padding: 1rem;
+    }
+  
+    .product-image {
+      height: 180px;
+    }
+  
+    .product-card h3 {
+      font-size: 0.9rem;
+      height: 2.2rem;
+    }
+  
+    .price {
+      font-size: 1rem;
+    }
+  
+    .add-to-cart {
+      font-size: 0.8rem;
+      padding: 0.6rem 1.2rem;
+    }
+  
+    .product-modal-content {
+      padding: 15px;
+    }
+  
+    .product-modal-details {
+      padding: 15px;
+    }
+  
+    .product-modal-details h2 {
+      font-size: 1.3rem;
+    }
+  
+    .product-modal-price {
+      font-size: 1.2rem;
+    }
+  
+    .product-modal-description {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Стили для изображений продуктов */
+  .hoodie,
+  .black,
+  .grey,
+  .pinq,
+  .greenjack,
+  .bluejack,
+  .darkjack,
+  .redjack,
+  .whitepant,
+  .greenpant,
+  .redpant,
+  .bluepant,
+  .whiteshoe,
+  .blackshoe,
+  .yellowshoe,
+  .redshoe {
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* Фоновые изображения для каждого продукта */
+  .hoodie {
+    background-image: url(https://glogangworldwide.com/cdn/shop/files/GLORY-THORN-FULLZIP-HOODIE-01.jpg?v=1742327698&width=1946);
+  }
+  
+  .black {
+    background-image: url(https://glogangofficials.com/wp-content/uploads/2024/07/Glory-Olympics-Hoodie-Black.png);
+  }
+  
+  .grey {
+    background-image: url(https://glogangworldwide.com/cdn/shop/files/Heart-Glo-Full-Zip-Black-01.jpg?v=1739573721&width=823);
+  }
+  
+  .pinq {
+    background-image: url(https://glogangworldwide.com/cdn/shop/files/Heart-Glo-Full-Zip-Pink-01.jpg?v=1739573726&width=823);
+  }
+  
+  .greenjack {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .bluejack {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .darkjack {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .redjack {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .whitepant {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .greenpant {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .redpant {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .bluepant {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .whiteshoe {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .blackshoe {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .yellowshoe {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  .redshoe {
+    background-image: url("https://sun9-35.userapi.com/s/v1/ig2/OKFi_xv3K75P1Dtmt3ASnjctwLEAbJwFCaNvvggwQlln50QilVsv8-S8LzufvpSja_r37XDBFI9slDkRlUciUV7q.jpg?quality=95&as=32x20,48x30,72x45,108x68,160x100,240x150,360x225,480x301,540x338,640x401,720x451,1080x676,1280x801,1440x902,1471x921&from=bu&u=LpSgxYeEVnsN4aFh51RpRWSViXBDZnSY7UpxbGsTXLM&cs=1471x921");
+  }
+  
+  
